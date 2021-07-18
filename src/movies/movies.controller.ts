@@ -15,7 +15,7 @@ import { MoviesService } from './movies.service';
 
 @Controller('movies') // 기본 라우터
 export class MoviesController {
-  constructor(private readonly moviesService: MoviesService) {}
+  constructor(private readonly moviesService: MoviesService) {} // 타입을 추가하는 것만으로도 잘 작동함.
 
   @Get()
   getAll(): Movie[] {
